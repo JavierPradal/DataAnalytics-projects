@@ -5,7 +5,7 @@ Este análisis explora los patrones de **Amazon Chargebacks** (disputas de trans
 
 Además del reporte en PDF, el análisis está disponible como dashboard interactivo en Looker Studio
 
-[📊 Ver Dashboard en Looker Studio](https://datastudio.google.com/reporting/eeafe9a0-1daf-474e-88b9-c984ca16f8dc))
+[📊 Ver Dashboard en Looker Studio](https://lookerstudio.google.com/u/0/reporting/07e1af05-4040-462f-b583-af40283a5f56/page/ql6bE)
 
 ## Dashboard Visual
 
