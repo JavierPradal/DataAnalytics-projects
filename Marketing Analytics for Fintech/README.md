@@ -13,6 +13,14 @@ Reporte ejecutivo con:
 - **Visualizaciones** - Gráficos y dashboards de datos
 - **Conclusiones y Recomendaciones** - Plan de acción
 
+## 🖥️ Dashboard Interactivo
+
+[#-dashboard-interactivo](#-dashboard-interactivo)
+
+Además del reporte en PDF, el análisis está disponible como dashboard interactivo en Looker Studio, con filtros por campaña, mes, día, nivel educativo, edad y perfil laboral:
+
+[📊 Ver Dashboard en Looker Studio](https://datastudio.google.com/reporting/eeafe9a0-1daf-474e-88b9-c984ca16f8dc)
+
 ## 📊 Visualizaciones del Reporte
 
 ### Página 1 - Portada y Resumen Ejecutivo
