@@ -1,6 +1,6 @@
 # 🏠 Análisis de Alojamientos Airbnb en Madrid
 
-[![Descargar Presentación (PDF)](https://img.shields.io/badge/Descargar-Presentaci%C3%B3n--PDF-blue?style=for-the-badge&logo=adobe)](https://github.com/JavierPradal/DataAnalytics-projects/raw/main/Airbnb%20Analysis%20in%20Madrid/presentaci%C3%B3n_analisis_airbnb_madrid.pdf)
+[![Descargar Presentación (PDF)](https://img.shields.io/badge/Descargar-Presentaci%C3%B3n--PDF-blue?style=for-the-badge&logo=adobe)](https://raw.githubusercontent.com/JavierPradal/DataAnalytics-projects/main/Airbnb%20Analysis%20in%20Madrid/presentaci%C3%B3n_analisis_airbnb_madrid.pdf)
 
 > Un análisis exhaustivo del mercado de alojamientos de Airbnb en Madrid, explorando patrones de precios, distribución geográfica, tipos de alojamiento y factores que influyen en la demanda.
 
@@ -21,7 +21,9 @@
 
 ## 📊 Descripción General
 
-Este proyecto realiza un análisis completo del mercado de alojamientos en Airbnb dentro de Madrid, utilizando técnicas de análisis exploratorio de datos (EDA), visualización de datos y anális[...]
+Este proyecto realiza un análisis completo del mercado de alojamientos en Airbnb dentro de Madrid, utilizando técnicas de análisis exploratorio de datos (EDA), visualización de datos y análisis estadístico.
+
+### Aspectos Analizados:
 
 - 💰 **Distribución de precios** por tipos de alojamiento, barrios y características
 - 🗺️ **Ubicación geográfica** de los alojamientos y su impacto en los precios
@@ -81,7 +83,8 @@ El análisis sigue el siguiente flujo:
 - Identificación de patrones y correlaciones
 - Análisis por segmentos (barrios, tipos, etc.)
 
-### 4️⃣ **Visualización de Datos**n- Gráficos de distribución (histogramas, boxplots)
+### 4️⃣ **Visualización de Datos**
+- Gráficos de distribución (histogramas, boxplots)
 - Mapas geográficos con ubicaciones
 - Análisis de tendencias temporales
 - Correlaciones entre variables
@@ -272,6 +275,7 @@ jupyter lab codigo_analisis_airbnb_madrid.ipynb
 ### Opción 3: Ver Presentación
 - Descarga [`presentación_analisis_airbnb_madrid.pdf`](./presentación_analisis_airbnb_madrid.pdf)
 - Visualiza un resumen ejecutivo con gráficos clave y conclusiones
+- O accede directamente desde el [enlace de descarga](https://github.com/JavierPradal/DataAnalytics-projects/tree/main/Airbnb%20Analysis%20in%20Madrid)
 
 ---
 
