@@ -33,6 +33,30 @@ Reporte ejecutivo con:
 - Proporcionar estrategias basadas en datos
 - Optimizar ROI en campañas digitales
 
+## 📊 Insights principales
+
+- **Duración de la llamada como predictor clave**: los clientes que finalmente se suscribieron tuvieron una duración media de contacto de 9:13 min, frente a solo 3:40 min en los que no convirtieron — la duración de la conversación es la señal más fuerte de intención de compra.
+
+- **Fatiga de campaña**: la tasa de conversión cae drásticamente con el número de contactos repetidos. Las primeras campañas alcanzan un 13,04% de conversión, mientras que las campañas de recontacto tardío caen por debajo del 5% (varias incluso al 0%). Esto sugiere que insistir sobre la misma audiencia tiene rendimientos decrecientes rápidos, y que los recursos deberían priorizarse en las primeras oleadas de contacto.
+
+- **Perfil demográfico del cliente que convierte**: los clientes con estudios universitarios y el segmento de 17-32 años muestran las tasas de suscripción más altas, mientras que los perfiles con educación básica convierten notablemente menos.
+
+- **Estacionalidad**: los meses de marzo, septiembre y diciembre concentran los picos de conversión, frente a un volumen mucho menor (aunque de mayor contacto total) en mayo, julio y agosto.
+
+- **Modelo predictivo (XGBoost)**: se entrenó un modelo de clasificación para estimar la probabilidad de conversión por cliente, usando como variables principales duración de contacto, número de contactos previos, educación, edad y ocupación — pensado para priorizar a qué clientes contactar primero en futuras campañas.
+
+- **Conversión global**: 11,27% sobre 41.162 clientes contactados, con un margen claro de mejora si se optimiza el timing y la segmentación de contacto en lugar de aplicar la misma estrategia a toda la base.
+
+## 💡 Recomendaciones de negocio
+
+- **Priorizar recursos en las primeras oleadas de contacto**: dado que las campañas iniciales convierten muy por encima de los recontactos tardíos (13% vs <5%), tiene más sentido invertir presupuesto y esfuerzo comercial en llegar a clientes nuevos que insistir repetidamente sobre la misma base de contacto.
+
+- **Usar la duración de la llamada como señal temprana de calidad de lead**: si un contacto se está alargando por encima de la media, podría activarse como indicador en tiempo real para priorizar seguimiento inmediato o pasar la llamada a un agente senior.
+
+- **Segmentar la estrategia de contacto por perfil demográfico**: enfocar campañas específicas hacia el segmento 17-32 años y clientes con estudios universitarios, que muestran mayor propensión a convertir, en lugar de aplicar el mismo guion y frecuencia de contacto a toda la base de clientes.
+
+- **Aplicar el modelo predictivo como filtro previo a la campaña**: usar las probabilidades de conversión estimadas por el modelo XGBoost para priorizar la lista de contacto antes de lanzar una nueva oleada, en vez de contactar a toda la base por igual — reduciendo coste operativo y mejorando la tasa de conversión efectiva.
+
 ## 📈 Palabras Clave
 `fintech` `marketing analytics` `digital marketing` `data analysis` `financial technology`
 
