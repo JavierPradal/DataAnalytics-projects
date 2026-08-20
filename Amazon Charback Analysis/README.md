@@ -1,98 +1,191 @@
 # Amazon Charback Analysis
 
-Este repositorio contiene el análisis exploratorio y modelos relacionados con los "Amazon Chargeback" (nota: el nombre de la carpeta original es "Amazon Charback Analysis"). El objetivo es estudiar patrones de cobros/contracargos y comportamientos relacionados para extraer insights y construir modelos predictivos.
+## Overview
+Este análisis explora los patrones de **Amazon Chargebacks** (disputas de transacciones) usando técnicas de análisis exploratorio de datos (EDA) y machine learning. El objetivo es identificar factores de riesgo y construir un modelo predictivo de probabilidad de chargeback por transacción.
 
-## Contenido
+## Dashboard Visual
 
-- Notebooks/:
-  - Todos los notebooks Jupyter usados para la carga, limpieza, análisis exploratorio, visualización y modelado.
-- data/ (si está incluida):
-  - Archivos CSV/Parquet usados en el análisis (si no están, se indican las instrucciones para obtenerlos).
-- outputs/:
-  - Gráficos y reportes generados por los notebooks.
+![Amazon Charback Analysis Dashboard](dashboard.png)
 
-> Nota: Los archivos de datos sensibles no deberían subirse al repositorio; en su lugar, incluir instrucciones para descargar o preparar los datos.
+*Dashboard interactivo mostrando análisis de chargebacks por región, producto, método de pago y tendencias temporales.*
+
+---
+
+## Descripción del Proyecto
+
+El análisis cubre:
+
+✅ **Análisis Geográfico:** Distribución de chargebacks por región  
+✅ **Segmentación por Producto:** Identificación de categorías de mayor riesgo  
+✅ **Análisis Temporal:** Tendencias de chargebacks a lo largo del tiempo  
+✅ **Métodos de Pago:** Identificación de métodos más propensos a chargebacks  
+✅ **Causas de Disputa:** Motivos principales de chargebacks  
+✅ **Modelo Predictivo:** Predicción de probabilidad de chargeback por transacción  
+
+---
+
+## Contenido del Repositorio
+
+```
+Amazon Charback Analysis/
+├── notebooks/
+│   ├── 00_data_load_and_cleaning.ipynb
+│   ├── 01_exploratory_analysis.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_modeling.ipynb
+│   └── 04_reporting_and_conclusions.ipynb
+├── data/
+│   └── [Archivos CSV/Parquet con datos de transacciones]
+├── outputs/
+│   └── [Gráficos y reportes generados]
+├── dashboard.png
+└── README.md
+```
+
+---
 
 ## Requisitos
 
-- Python 3.9+ recomendado
-- Jupyter Notebook o JupyterLab
-- Paquetes principales (instalar con pip o conda):
-  - pandas
-  - numpy
-  - matplotlib
-  - seaborn
-  - scikit-learn
-  - plotly (opcional, para visualizaciones interactivas)
-  - seaborn
-  - jupyter
+- **Python 3.9** o superior
+- **Jupyter Notebook** o **JupyterLab**
 
-Ejemplo usando pip:
+### Paquetes principales:
+- `pandas` - Manipulación de datos
+- `numpy` - Operaciones numéricas
+- `matplotlib` - Visualizaciones estáticas
+- `seaborn` - Visualizaciones estadísticas
+- `scikit-learn` - Machine learning
+- `plotly` - Visualizaciones interactivas (opcional)
 
+### Instalación de dependencias
+
+```bash
 pip install -r requirements.txt
+```
 
-Si no existe `requirements.txt`, se puede crear con:
+Si no existe `requirements.txt`, ejecuta:
 
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn plotly jupyter
+```
 
-## Estructura sugerida de notebooks
+---
 
-1. 00_data_load_and_cleaning.ipynb - carga y limpieza de datos
-2. 01_exploratory_analysis.ipynb - análisis exploratorio y visualizaciones
-3. 02_feature_engineering.ipynb - creación de variables para modelos
-4. 03_modeling.ipynb - entrenamiento y evaluación de modelos
-5. 04_reporting_and_conclusions.ipynb - reportes finales y conclusiones
+## Cómo Ejecutar
 
-Adapte los nombres según los notebooks presentes.
-
-## Cómo ejecutar
-
-1. Clona el repositorio:
-
+### 1. Clona el repositorio
+```bash
 git clone https://github.com/JavierPradal/DataAnalytics-projects.git
 cd "Amazon Charback Analysis"
+```
 
-2. Crea y activa un entorno virtual (opcional pero recomendado):
-
+### 2. Crea un entorno virtual (recomendado)
+```bash
 python -m venv venv
-source venv/bin/activate  # Linux / macOS
-venv\Scripts\activate     # Windows
 
-3. Instala dependencias:
+# Linux / macOS
+source venv/bin/activate
 
+# Windows
+venv\Scripts\activate
+```
+
+### 3. Instala las dependencias
+```bash
 pip install -r requirements.txt
+```
 
-4. Lanza Jupyter Lab / Notebook:
-
+### 4. Inicia Jupyter
+```bash
 jupyter lab
 # o
 jupyter notebook
+```
 
-5. Abre los notebooks listados y ejecuta las celdas en orden.
+### 5. Ejecuta los notebooks en orden
+1. `00_data_load_and_cleaning.ipynb` - Carga y limpieza de datos
+2. `01_exploratory_analysis.ipynb` - Análisis exploratorio y visualizaciones
+3. `02_feature_engineering.ipynb` - Creación de variables predictivas
+4. `03_modeling.ipynb` - Entrenamiento y evaluación de modelos
+5. `04_reporting_and_conclusions.ipynb` - Reportes finales y conclusiones
 
-## Notas sobre datos
+---
 
-- Si los datos no están incluidos, agregue un script `scripts/download_data.sh` o instrucciones en un notebook para reconstruir/descargar el dataset desde la fuente original.
-- Mantenga archivos con credenciales fuera del repositorio. Use variables de entorno o un archivo `.env` ignorado por Git.
+## Flujo de Trabajo
 
-## Resultados esperados
+```
+📥 Data Loading & Cleaning
+        ↓
+📊 Exploratory Analysis (EDA)
+        ↓
+⚙️ Feature Engineering
+        ↓
+🤖 Model Training & Evaluation
+        ↓
+📈 Reporting & Insights
+```
 
-- Visualizaciones que identifiquen patrones en chargebacks por producto, región, método de pago y tiempo.
-- Un pipeline simple que permita predecir probabilidad de chargeback por transacción.
-- Métricas de evaluación (ROC-AUC, precision/recall, F1) y un análisis de las características más importantes.
+---
+
+## Resultados Esperados
+
+### Visualizaciones Clave:
+- 📍 Mapa de calor de chargebacks por región
+- 📈 Gráficos de tendencias temporales
+- 📦 Distribución por categoría de producto
+- 💳 Análisis de métodos de pago
+- 🎯 Matriz de correlación
+
+### Modelo Predictivo:
+- Probabilidad de chargeback por transacción
+- Métricas de evaluación: **ROC-AUC, Precision, Recall, F1-Score**
+- Análisis de características más importantes (Feature Importance)
+
+### Insights Operacionales:
+- 🚨 Factores de riesgo identificados
+- 💡 Recomendaciones para reducir chargebacks
+- 🎯 Estrategias por segmento
+
+---
+
+## Notas Importantes
+
+⚠️ **Seguridad de Datos:**
+- Los datos sensibles NO deberían subirse al repositorio
+- Usa variables de entorno o un archivo `.env` (ignorado por Git)
+- Mantén credenciales y tokens seguros fuera del versionado
+
+📝 **Datos:**
+- Si los datos no están incluidos, sigue las instrucciones en los notebooks
+- O descárgalos desde tu fuente de datos original
+
+---
 
 ## Contribuciones
 
-Si quieres contribuir:
-- Abre un issue describiendo la propuesta.
-- Crea una rama con un nombre descriptivo.
-- Envía un pull request con cambios claros y notebooks ejecutados.
+Si deseas contribuir al proyecto:
+
+1. 🔀 Abre un **issue** describiendo tu propuesta
+2. 🌳 Crea una rama con nombre descriptivo:
+   ```bash
+   git checkout -b feature/tu-propuesta
+   ```
+3. 📤 Envía un **pull request** con cambios claros y notebooks ejecutados
+
+---
 
 ## Licencia
 
-Añade una licencia apropiada (por ejemplo MIT) si deseas permitir contribuciones y uso público.
+**MIT License** - Consulta [LICENSE](LICENSE) para más detalles
+
+---
 
 ## Contacto
 
-Javier Pradal - perfil de GitHub: https://github.com/JavierPradal
+**Javier Pradal**  
+🔗 [GitHub Profile](https://github.com/JavierPradal)  
+📧 Para preguntas o sugerencias sobre este análisis, abre un issue en el repositorio
 
+---
+
+**Última actualización:** Agosto 2026
