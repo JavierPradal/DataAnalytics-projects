@@ -3,6 +3,10 @@
 ## Overview
 Este análisis explora los patrones de **Amazon Chargebacks** (disputas de transacciones) usando técnicas de análisis exploratorio de datos (EDA) y machine learning. El objetivo es identificar factores de riesgo y construir un modelo predictivo de probabilidad de chargeback por transacción.
 
+Además del reporte en PDF, el análisis está disponible como dashboard interactivo en Looker Studio
+
+[📊 Ver Dashboard en Looker Studio](https://datastudio.google.com/reporting/eeafe9a0-1daf-474e-88b9-c984ca16f8dc))
+
 ## Dashboard Visual
 
 ![Amazon Charback Analysis Dashboard](dashboard.png)
