@@ -1,7 +1,7 @@
 # 🏠 Análisis de Alojamientos Airbnb en Madrid
 
 **📥 Descargar Presentación (PDF):**  
-https://raw.githubusercontent.com/JavierPradal/DataAnalytics-projects/main/Airbnb%20Analysis%20in%20Madrid/presentaci%C3%B3n_analisis_airbnb_madrid.pdf
+https://github.com/JavierPradal/DataAnalytics-projects/blob/main/Airbnb%20Analysis%20in%20Madrid/presentacio%CC%81n_analisis_airbnb_madrid.pdf
 
 > Un análisis exhaustivo del mercado de alojamientos de Airbnb en Madrid, explorando patrones de precios, distribución geográfica, tipos de alojamiento y factores que influyen en la demanda.
 
